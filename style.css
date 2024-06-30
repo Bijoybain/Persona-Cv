@@ -1,0 +1,423 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #033333;
+    color: #fff;
+    overflow-x: hidden;
+    font-family: "Montserrat Alternates", sans-serif;
+    cursor: default;
+}
+#navBar-sec{
+    width: 100%;
+    height: 10vh;
+    background-color: #1a5555;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+}
+.topBarLogo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.topBarLogo img{
+    width: 15rem;
+    object-fit: cover;
+}
+.topBarInfo{
+    width: 60%;
+    text-align: center;
+}
+.topBarInfo ul{
+display: flex;
+justify-content: center;
+margin-left: 2.5rem;
+margin-top: 0.7rem;
+}
+.topBarInfo ul:hover{
+    cursor: pointer;
+}
+.topBarInfo ul li{
+    list-style: none;
+    float: left;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.979);
+}
+.topBarInfo ul li:hover{
+    color: #51ffae;
+}
+.topBarInfo .active{
+    color: #51ffae;
+}
+#btn{
+    border: none;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: #51ffae;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1rem;
+}
+#btn:hover{
+    border: 1px solid #51ffae;
+    background-color: #1a5555;
+    color: #fff;
+}
+#intro-sec{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    margin-top: 10rem;
+}
+.introInfo{
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+}
+.introInfo h3{
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+.introLogo{
+    width: 50%;
+margin: auto;
+}
+.introLogo img{
+    width: 25rem;
+    margin: 10rem;
+}
+
+.mtext{
+    width: 100%;
+    display: block;
+}
+.mtext h2{
+    margin-left: 40rem;
+    margin-bottom: 2rem;
+}
+.mtext h2::after{
+        content: "";
+        position: absolute;
+        bottom: -50px;
+        width: 7rem;
+        border-bottom: 4px solid #51ffae;
+        left: 45.5%;
+        border-radius: 20px;
+}
+#aboutMe-sec{
+    width: 100%;
+    height: 82vh;
+    display: flex;
+}
+.aboutmeImg,
+.aboutmeInfo
+{
+    width: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.aboutmeImg img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #51ffae;
+}
+.aboutmeInfo p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    word-spacing: 0.6rem;
+    text-align: justify;
+    margin-right: 4cqw;
+}
+.aboutmeicon{
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: black;
+     display: flex;
+}
+.aboutmeicon i{
+     margin-left: 1rem;
+    background-color: #51ffae;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.aboutmeicon i:hover {
+    background-color: #1a5555;
+    color: #fff;
+}
+#mySkil{
+overflow: hidden;
+margin-bottom: 2rem;
+}
+.rowProjectHeading{
+    width: 100%;
+    display: block;
+}
+
+.rowProjectHeading h2 {
+    margin-left: 40rem;
+    margin-bottom: 2rem;
+}
+
+.rowProjectHeading::after {
+content: "";
+    position: absolute;
+    width: 7rem;
+    height: 0.3rem;
+    border-radius: 0.5rem;
+    background: #51ffae;
+    display: block;
+    top: 197%;
+    left: 50%;
+    transform: translate(-55%, -100%);
+}
+.boxwrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: #1a5555;
+    width: 30%;
+    margin: 1rem;
+    border-radius: 10px;
+    /* transition: 0.5s; */
+}
+.boximg{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+.boximg img{
+    max-width: 7rem;
+}
+.boxText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.boxText p{
+text-align: center;
+padding: 1rem 1rem;
+line-height: 1.9rem;
+font-weight: 500;
+}
+.box:hover{
+    background-color: #51ffae;
+    color: black;
+}
+.sikllHeading::before{
+    width: 7rem;
+    content: "";
+    background-color: #51ffae;
+    border-radius: 10px;
+    border: 2px solid #51ffae;
+    margin-left: 45.5%;
+    position: absolute;
+    margin-top: 2.5rem;
+}
+.skillBtn{
+    display: flex;
+    justify-content: center;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+}
+.skill ul li{
+    list-style: none;
+}
+.skill input{
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 35rem;
+    background-color: #51ffae;
+    border-radius: 20px;
+    height: 3px;
+}
+.skill input::-webkit-slider-thumb{
+appearance: none;
+}
+.skill p{
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+.skill ul li{
+    margin: 1.5rem 0;
+}
+#project-sec{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.projectContainer{
+    width: 100%;
+    margin-left: 5.2rem;
+}
+.projectimg{
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: #1a5555;
+}
+.projectimg img{
+    max-width: 90%;
+   max-height: 90%;
+   margin:auto;
+}
+.projectdetails{
+    display: flex;
+    margin-left: 3rem;
+    width: 80%;
+    padding-bottom: 2rem;
+}
+.projectinfo{
+    background-color: #1a5555;
+    border-radius: 10px;
+    width: 60%;
+    padding: 1rem;
+    margin-right: 5rem;
+}
+.projectinfo h2{
+  text-align: left;
+  font-size: 1.5rem;
+}
+.projectinfo p{
+    margin: 1rem 0;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.projectbtn{
+    display: flex;
+}
+.projectbtn i {
+    margin-left: 1rem;
+    background-color: #51ffae;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #51ffae;
+    margin-top: 1rem;
+}
+
+.projectbtn i:hover {
+    background-color: #1a5555;
+    color: #fff;
+}
+#project-sec button{
+    margin-left: 42%;
+}
+.clientwrapper{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.client{
+    background-color: #1a5555;
+    width: 40%;
+    margin: 1rem;
+    border-radius: 10px;
+
+}
+.client p{
+    padding: 1rem;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 500;
+    height: 38%;
+}
+.clientImg{
+    display: flex;
+    flex-direction: column;
+
+}
+.clientImg p{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.clientImg img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 9rem;
+}
+
+.contactwrapper{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.contacatbox{
+    width: 20%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.contacatbox i{
+    margin: auto;
+border: 2px solid #51ffae;
+color: #51ffae;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-bottom: 1rem;
+}
+.contacatbox i:hover{
+color:white;
+background-color: #51ffae;
+}
+.contacatbox p{
+    margin: 0.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+#footer{
+    background-color: #1a5555;
+    padding: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+}
+
+.dark_btn{
+    background-color: #1a5555;
+    color: white; 
+}
